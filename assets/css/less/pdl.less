@@ -1,0 +1,1039 @@
+@import 'common.less';
+
+.pdl-cf:before, .pdl-cf:after,
+.cf:before, .cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.pdl-cf:after, .cf:after { clear: both; }
+.pdl-cf, .cf { *zoom: 1; }
+
+/*
+ * Search Form
+ */
+form#pdmsearchform {
+    padding: 12px 0;
+    text-align: center;
+}
+
+form#pdmsearchform input {
+    display: inline;
+}
+
+form#pdmsearchform .pdmsearchbutton {
+    margin-top: 5px;
+}
+
+form#pdmsearchform a.advanced-search-link {
+    font-size: 70%;
+    display: block;
+}
+
+#pdl-search-form {
+    padding-left: 10px;
+}
+
+#pdl-search-form .pdl-search-filter {
+    margin-bottom: 10px;
+    clear: both;
+}
+
+#pdl-search-form .pdl-search-filter > .pdl-search-field-label {
+    display: block;
+    width: 40%;
+    float: left;
+}
+
+#pdl-search-form .pdl-search-filter > div.field {
+    display: block;
+    width: 60%;
+    margin-left: 40%;
+    padding-left: 5px;
+}
+
+#pdl-search-form .pdl-search-filter > div.field > input[type="text"] {
+    box-sizing: border-box;
+    width: 90%;
+}
+
+#pdl-search-form .pdl-search-filter > div.field > select {
+    box-sizing: border-box;
+    width: 90%;
+}
+
+#pdl-search-form input[type="submit"] {
+    float: none;
+    margin: auto;
+}
+
+.pdl-clearfix:after,
+.cf:before, .cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.pdl-clearfix:after, .cf:after { clear: both; }
+.pdl-clearfix, .cf { *zoom: 1; }
+
+.pdl-pagination {
+    margin: 25px 0 0 0;
+}
+
+.pdl-pagination .next {
+    float: right;
+}
+
+/* listing views */
+.listing-actions form {
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+.listing-actions input {
+    margin: 0;
+    font-size: 80%;
+}
+
+.listing-actions input.delete-listing {
+    margin-left: 5px;
+    margin-right: 30px;
+    color: #ff0000 !important;
+}
+
+.listing-actions .back-to-dir {
+    float: right;
+}
+
+.listing-actions a.button {
+    padding: 5px 10px;
+    font-size: 11px;
+    text-decoration: none;
+    background-color: #e6e6e6;
+    color: #7c7c7c;
+    background-repeat: repeat-x;
+    background-image: -moz-linear-gradient(top, #f4f4f4, #e6e6e6);
+    background-image: -ms-linear-gradient(top, #f4f4f4, #e6e6e6);
+    background-image: -webkit-linear-gradient(top, #f4f4f4, #e6e6e6);
+    background-image: -o-linear-gradient(top, #f4f4f4, #e6e6e6);
+    background-image: linear-gradient(top, #f4f4f4, #e6e6e6);
+    border: 1px solid #d2d2d2;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(64, 64, 64, 0.1);
+    margin-right: 3px;
+}
+
+.listing-actions a.button:hover {
+    color: #5e5e5e;
+    background-color: #ebebeb;
+    background-repeat: repeat-x;
+    background-image: -moz-linear-gradient(top, #f9f9f9, #ebebeb);
+    background-image: -ms-linear-gradient(top, #f9f9f9, #ebebeb);
+    background-image: -webkit-linear-gradient(top, #f9f9f9, #ebebeb);
+    background-image: -o-linear-gradient(top, #f9f9f9, #ebebeb);
+    background-image: linear-gradient(top, #f9f9f9, #ebebeb);
+}
+
+.listing-actions a.delete-listing {
+    margin-left: 20px;
+    color: #ff0000;
+}
+
+.pdl-listing .listing-details .field-value {
+    margin-bottom: 10px;
+    width: 100%;
+    float: none;
+}
+
+.pdmsingledetails .singledetailsview .field-value {
+    margin-bottom: 10px;
+}
+
+.field-value label {
+    color: #444;
+    font-weight: bold;
+}
+
+/* listing view > excerpt */
+.pdl-listing-excerpt {
+    padding: 10px;
+    border-bottom: dotted 1px #ddd;
+}
+
+.pdl-listing-excerpt.odd { background: #eee; }
+.pdl-listing-excerpt.sticky { background: #fff0cf; border-bottom: solid 1px #b37800; }
+
+.pdl-listing-excerpt .listing-thumbnail {
+    float: right;
+    margin: 0 10px 0 0;
+}
+
+.pdl-listing-excerpt .listing-actions {
+    margin-top: 15px;
+}
+
+/* listing views > single */
+.pdl-listing-single .listing-actions {
+    margin-bottom: 25px;
+}
+
+.pdl-listing-single.sticky {
+    margin-top: 30px;
+}
+
+.pdl-listing-single .stickytag {
+    float: right;
+    margin-top: -68px;
+}
+
+.pdl-listing-single .stickytag img {
+    border: 0;
+    box-shadow: none;
+    background: transparent;
+}
+
+.pdl-listing-single .listing-title {
+    padding: 2px 8px;
+    background: #efefef;
+    border: dotted 1px #ddd;
+    margin-bottom: 7px;
+}
+
+.pdl-listing-single .listing-title h2 {
+    clear: none;
+    margin: 0;
+}
+
+.pdl-listing-single .main-image {
+    float: right;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.pdl-listing-single .main-image a {
+    position: relative !important;
+}
+
+.pdl-listing-single .main-image img {
+    border: solid 1px #333;
+}
+
+.pdl-listing-single .listing-details.with-image {
+}
+
+.pdl-listing-single .extra-images {
+    margin-top: 10px;
+    clear: both;
+}
+
+.pdl-listing-single .extra-images ul {
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+.pdl-listing-single .extra-images ul li {
+    list-style-type: none;
+    display: inline;
+    margin-left: 5px;
+}
+
+.pdl-listing-single .extra-images ul li img {
+    display: inline;
+    vertical-align: top;
+    margin: 0 auto;
+    max-width: 150px;
+    border: solid 1px #333;
+}
+
+/* social fields */
+
+.pdl-listing .social-fields {
+    margin: 20px 0;
+}
+
+.pdl-listing .social-field {
+    margin: 5px 0;
+    height: 20px;
+    vertical-align: middle;
+}
+
+/* Work-around a known FB like button CSS issue (http://stackoverflow.com/questions/8311012/facebook-like-button-dialog-overflow-issue) */
+    .social-field.facebook .fb-like > span {
+        overflow: visible !important;
+        width: 450px !important;
+        vertical-align: top !important;
+/*        margin-right: -375px;*/
+    }
+
+@media screen and (max-width: 500px) {
+    .social-field.facebook .fb-like > span {
+        width: 100% !important;
+    }
+}
+
+.pdl-listing-contact-form {
+    margin-top: 20px;
+    border-top: dotted 1px #ddd;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.pdl-listing-contact-form .send-message-button {
+    margin-left: -10px;
+}
+
+.pdl-listing-contact-form h3 {
+    margin-left: -10px;
+}
+
+.pdl-listing-contact-form textarea {
+    width: 98% !important;
+}
+
+/* listing comments form */
+.pdl-listing .comments {
+    margin-top: 20px;
+}
+
+/* pages toolbar */
+.pdl-bar {
+    background: #f7f7f7;
+    margin: 10px 0 20px 0;
+    padding: 5px 10px;
+}
+
+.pdl-bar:before, .pdl-bar:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.pdl-bar .pdl-search-form {
+    margin: 0;
+    padding: 0 !important;
+    margin-left: 50%;
+}
+
+.pdl-main-links a {
+    margin-right: 15px;
+}
+
+.pdl-bar .left {
+    float: left;
+    text-align: center;
+}
+
+.pdl-bar .right {
+    width: 300px;
+    float: right;
+}
+
+/* sort options */
+.pdl-listings-sort-options {
+    font-size: 90%;
+    margin: 5px 0;
+    text-align: right;
+}
+
+.pdl-listings-sort-options .current {
+    font-weight: bold;
+}
+
+/* main page */
+
+#pdl-categories {
+    clear: both;
+}
+
+.pdl-categories {
+    margin: 0;
+    padding-left: 20px;
+}
+.pdl-categories .cat-item {
+    box-sizing: border-box;
+    float: left;
+    margin: 0 0 20px;
+    width: 50%;
+}
+.pdl-categories .cat-item:nth-child(2n+1) {
+    clear: left;
+}
+.pdl-categories .cat-item .cat-item {
+    margin: 0;
+    width: 100%;
+}
+
+.pdl-categories-tiny .cat-item {
+    float: none;
+    width: 100%;
+}
+.pdl-categories-tiny .cat-item:nth-child(2n+1) {
+    clear: none;
+}
+
+@import 'form-fields.less';
+@import 'checkout.less';
+@import 'submit-listing.less';
+@import 'login.less';
+
+/* error and status messages */
+.pdl-msg {
+    font-size: 85%;
+    padding: 6px 12px;
+    color: #555;
+    margin: 5px 0;
+    background: #fffbcc;
+    border-radius: 3px;
+
+    ul {
+        margin: 0;
+
+        li {
+            list-style-position: inside;
+        }
+    }
+}
+
+.pdl-msg.error, .pdl-msg.pdl-error {
+    color: #fff;
+    background: @red;
+}
+
+.pdl-msg.tip {
+    background: #d7f5ff;
+}
+
+/*.wpdirlisterroralert { color:#ff0000;font-weight:bold;font-size:14px; }*/
+
+.pdl-submit-page table.fee-options {
+    width: 100%;
+}
+
+.pdl-submit-page table.fee-options th,
+.pdl-submit-page table.fee-options td {
+    text-align: center;
+}
+
+.pdl-submit-page table.fee-options td.fee-label,
+.pdl-submit-page table.fee-options tr.fee-description td {
+    text-align: left;
+}
+
+.pdl-submit-page table.fee-options .fee-selection {
+    width: 5%;
+}
+
+.pdl-submit-page table.fee-options tr.fee-option td.fee-label {
+    font-weight: bold;
+}
+
+.pdl-submit-page table.fee-options td.fee-description {
+    font-size: 90%;
+    color: #666;
+}
+
+#pdl-renewal-page .do-not-renew-listing {
+    .pdl-rounded-box;
+
+    background-color: @gray;
+}
+#pdl-renewal-page .do-not-renew-listing input[type="submit"] {
+    background: @red;
+}
+
+.pdl-recaptcha-error {
+    color: #ff0000;
+}
+
+#pdl-delete-listing-page form.confirm-form {
+    margin-top: 30px;
+}
+
+#pdl-delete-listing-page input.delete-listing-confirm {
+    margin-left: 20px;
+    color: #c00;
+}
+
+/*
+ * Google Wallet gateway.
+ */
+
+#googlewallet-buy img {
+    border: none;
+    box-shadow: none
+}
+
+.pdl-checkout input[type="image"] {
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    width: auto;
+}
+
+/*
+ * Manage Recurring Payments.
+ */
+table#pdl-manage-recurring th.listing-title,
+table#pdl-manage-recurring td.listing-title {
+    min-width: 200px;
+}
+
+table#pdl-manage-recurring a.cancel-subscription {
+    color: #ff0000;
+}
+
+#pdl-manage-recurring-cancel dl dd {
+    margin-left: 10px;
+}
+
+#pdl-manage-recurring-cancel .cancel-instructions {
+}
+
+.pdl-cancel-subscription-form {
+    .pdl-rounded-box;
+
+    background-color: @gray;
+}
+.pdl-cancel-subscription-form input.button-primary[type="submit"] {
+    background-color: @red;
+}
+
+/* {{ Credit Card details form. */
+.pdl-cc-form {
+    padding: 0;
+    width: 90%;
+}
+
+.pdl-cc-form h4 {
+    margin: 0;
+}
+
+.pdl-cc-field {
+}
+
+.pdl-cc-field input {
+    width: auto;
+}
+
+.pdl-cc-field label {
+    display: block;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 10px;
+}
+
+/* }} */
+
+/* {{ Billing information form. */
+#pdl-billing-information .billing-info-section h4 {
+    margin: 10px 0 5px 0;
+}
+
+#pdl-billing-information .billing-info-section table {
+    margin: 1.75em 0;
+}
+
+#pdl-billing-information #pdl-billing-field-exp,
+#pdl-billing-information #pdl-billing-field-exp-year {
+    width: 40%;
+    display: inline;
+}
+
+#pdl-billing-information .form-buttons {
+    margin: 15px 0;
+}
+/* }} */
+
+/* {{ Mobile CSS. */
+.pdl-show-on-mobile {
+    display: none;
+}
+
+input[type="button"].pdl-show-on-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    .pdl-show-on-mobile {
+        display: inline !important;
+    }
+
+    input[type="button"].pdl-hide-on-mobile {
+        display: none;
+    }
+
+    input[type="button"].pdl-show-on-mobile {
+        padding: 1em 2em;
+    }
+
+    .pdl-hide-on-mobile {
+        display: none;
+    }
+
+    .pdl-bar form.pdl-search-form {
+       /* width: 49%;*/
+        display: block;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .pdl-bar form.pdl-search-form  #intextbox{
+        margin-bottom: 5px;
+        padding: 4px;
+    }
+
+    .pdl-bar form.pdl-search-form input[type="text"] {
+        padding: 4px 0;
+        margin: 0 0 2px 0;
+    }
+
+    .pdl-listings-sort-options {
+        font-size: 90%;
+    }
+
+    .pdl-listing.pdl-listing {
+        font-size: 90%;
+    }
+
+    .pdl-listing.pdl-listing-excerpt .field-value > label {
+        display: block;
+    }
+
+    .pdl-listing.pdl-listing-excerpt .listing-thumbnail,
+    .pdl-listing.pdl-listing-single .listing-thumbnail {
+        /*width: 40%;*/
+        float: none;
+        padding: 5px;
+    }
+
+    .pdl-listing.pdl-listing-excerpt .listing-details,
+    .pdl-listing.pdl-listing-single .listing-details {
+        margin: 0 5px;
+        float: none;
+        display: block;
+    }
+
+    .pdl-listing .listing-actions input {
+        font-size: 70%;
+    }
+
+    .pdl-listing .listing-actions input.back-to-dir {
+        float: right;
+    }
+
+    .pdl-listing.pdl-listing-single .main-image {
+        display: block;
+        float: none;
+        padding: 0;
+        margin: 0 0 10px 0;
+        text-align: center;
+        max-width: 90%;
+    }
+
+    .pdl-listing.pdl-listing-single .field-value > label {
+        display: block;
+    }
+
+    .pdl-submit-page.step-images #image-upload-dnd-area {
+        font-size: 90%;
+        float: none !important;
+        width: 100% !important;
+    }
+
+    .pdl-submit-page.step-images .dnd-area-inside-error {
+        margin-top: 30px;
+    }
+
+    .pdl-submit-page.step-images #image-upload-conditions {
+        width: 100% !important;
+        float: none !important;
+        font-size: 90%;
+    }
+
+    .pdl-submit-page.step-images #image-upload-conditions dl {
+        margin: 0;
+        padding: 0;
+    }
+
+    .pdl-submit-page.step-images #image-upload-conditions dl dt {
+        margin: 0;
+        margin-right: 5px;
+        padding: 0;
+        float: left;
+    }
+
+    .pdl-submit-page.step-images #image-upload-conditions dl dd {
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
+
+    .pdl-submit-page.step-images .pdl-image img {
+        max-width: 50%;
+    }
+
+    .pdl-listings-sort-options.pdl-show-on-mobile {
+        margin-bottom: 10px;
+    }
+
+}
+
+/* }} */
+
+/* {{ Some fixes for Thickbox on PDL pages. */
+
+body.directory-listing #TB_ImageOff .screen-reader-text,
+body.directory-listing #TB_closeWindowButton .screen-reader-text {
+    visibility: hidden;
+}
+
+body.directory-listing #TB_next {
+    float: right;
+}
+
+body.directory-listing #TB_prev {
+    float: left;
+}
+
+body.directory-listing #TB_caption {
+    text-align: center;
+    width: 70%;
+}
+
+body.directory-listing #TB_closeWindow {
+    padding: 0;
+    height: 0px;
+}
+
+body.directory-listing #TB_closeWindow .screen-reader-text {
+    display: none;
+}
+
+body.directory-listing #TB_secondLine {
+    font-size: 11px;
+    color: #666;
+}
+
+/* }} */
+
+/* General forms. {{ */
+.pdl-form-row label {
+    display: block;
+}
+
+.pdl-form-row.pdl-form-textfield input[type="text"] {
+    width: 400px;
+}
+
+/* }} */
+
+/* Main search box. {{ */
+
+.pdl-main-box,
+.pdl-main-box .box-row,
+.pdl-main-box .box-col {
+    box-sizing: border-box;
+}
+
+.pdl-main-box {
+    background: #f7f7f7;
+    margin: 10px 0 20px 0;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+}
+
+.pdl-main-box .box-row {
+    margin-bottom: 4px;
+}
+
+.pdl-main-box .box-col {
+    margin-bottom: 4px;
+    width: 100%;
+}
+.pdl-main-box .box-col input {
+    width: 100%;
+}
+
+.pdl-main-box .submit-btn input[type="submit"] {
+    margin-top: 0;
+}
+
+.pdl-main-box .advanced-search-link {
+    border: none;
+    box-shadow: none;
+    display: block;
+    font-size: 11px;
+    text-align: right;
+    text-decoration: none;
+}
+
+.pdl-main-box-medium .box-col,
+.pdl-main-box-large .box-col {
+    float: left;
+}
+
+.pdl-main-box-medium .search-fields > .cols-1 .box-col,
+.pdl-main-box-large .search-fields > .cols-1 .box-col {
+    width: 100%;
+}
+
+.pdl-main-box-medium .search-fields > .cols-2 .box-col,
+.pdl-main-box-large .search-fields > .cols-2 .box-col {
+    width: 50%;
+}
+.pdl-main-box-medium .search-fields > .cols-2 .box-col:first-child,
+.pdl-main-box-large .search-fields > .cols-2 .box-col:first-child {
+    padding-right: 5px;
+    width: 50%;
+}
+.pdl-main-box-medium .search-fields > .cols-2 .box-col:last-child,
+.pdl-main-box-large .search-fields > .cols-2 .box-col:last-child {
+    padding-left: 5px;
+    width: 50%;
+}
+
+.pdl-main-box-medium .search-fields > .cols-3 .box-col,
+.pdl-main-box-large .search-fields > .cols-3 .box-col {
+    padding-left: 5px;
+    width: 50%;
+}
+.pdl-main-box-medium .search-fields > .cols-3 .box-col:first-child,
+.pdl-main-box-large .search-fields > .cols-3 .box-col:first-child {
+    padding-right: 5px;
+}
+.pdl-main-box-medium .search-fields > .cols-3 .box-col:first-child,
+.pdl-main-box-large .search-fields > .cols-3 .box-col:first-child {
+    padding: 0;
+    width: 100%;
+}
+
+.pdl-main-box-large .box-row {
+    margin-bottom: 0px;
+}
+
+.pdl-main-box-large .search-fields {
+    padding-right: 5px;
+    width: 78%;
+}
+.pdl-main-box-large .submit-btn {
+    padding-left: 5px;
+    width: 22%;
+}
+
+
+.pdl-main-links {
+    text-align: right;
+}
+
+.pdl-main-links .button {
+    margin: 0 5px;
+}
+.pdl-main-links .button:first-child {
+    margin-left: 0;
+}
+
+.pdl-main-links .button:last-child {
+    margin-right: 0;
+}
+
+.pdl-main-links-tiny .pdl-main-links .button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    margin: 0 0 4px;
+}
+
+.pdl-main-links-small .button {
+    width: 100%;
+    margin: 0 0 4px;
+}
+
+.pdl-main-links-small .pdl-main-links-2-buttons .button {
+    width: 49%;
+}
+.pdl-main-links-small .pdl-main-links-2-buttons .button:first-child {
+    margin-right: 1%;
+}
+.pdl-main-links-small .pdl-main-links-2-buttons .button:last-child {
+    margin-left: 1%;
+}
+
+.pdl-main-links-small .pdl-main-links-3-buttons .button:nth-child(2n) {
+    width: 49%;
+    margin-top: 1%;
+    margin-right: 1%;
+}
+.pdl-main-links-small .pdl-main-links-3-buttons .button:nth-child(2n+3) {
+    width: 49%;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+.pdl-main-links-large .button {
+    margin: 0 3px;
+}
+
+.pdl-with-button-styles {
+    .pdl-main-links-tiny .pdl-main-links .button {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .pdl-main-links-small .button {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .pdl-main-links-medium .pdl-main-links .button {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+}
+
+/*
+ * }}
+ *
+ */
+
+/*
+ * {{ Some compat fixes for themes.
+ */
+
+.single-pdl_listing .pdl-view-content-wrapper header.entry-header,
+.pdl-view-show_category .pdl-view-content-wrapper header.entry-header,
+.pdl-view-show_tag .pdl-view-content-wrapper header.entry-header,
+.pdl-view-search .pdl-view-content-wrapper header.entry-header,
+.pdl-view-submit_listing .pdl-view-content-wrapper header.entry-header {
+    display: none;
+}
+
+.pdl-wp-theme-graphene.single-pdl_listing h1.post-title,
+.pdl-wp-theme-graphene.pdl-view-show_category h1.post-title,
+.pdl-wp-theme-graphene.pdl-view-show_tag h1.post-title,
+.pdl-wp-theme-graphene.pdl-view-search h1.post-title,
+.pdl-wp-theme-graphene.pdl-view-submit_listing h1.post-title
+{
+    display: none;
+}
+
+.pdl-wp-theme-genesis.pdl-view-show_category .archive-description,
+.pdl-wp-theme-genesis.pdl-view-show_tag .archive-description
+{
+    display: none;
+}
+
+.pdl-wp-theme-hmtpro5.pdl-view-show_category .post-details,
+.pdl-wp-theme-hmtpro5.pdl-view-show_tag .post-details
+{
+    display: none;
+}
+
+.pdl-wp-theme-atahualpa.pdl-view-show_category .post-footer,
+.pdl-wp-theme-atahualpa.pdl-view-show_tag .post-footer,
+.pdl-wp-theme-atahualpa.pdl-view-show_listing .post-footer
+{
+    display: none;
+}
+
+.pdl-wp-theme-ultimate-silostorm-pro.pdl-view-show_category .entry-content .featured-image,
+.pdl-wp-theme-ultimate-silostorm-pro.pdl-view-show_tag .entry-content .featured-image,
+.pdl-wp-theme-ultimate-silostorm-pro.pdl-view-show_listing .entry-content .featured-image {
+    display: none;
+}
+
+/*
+ * }}
+ */
+
+@import 'plan-selection.less';
+
+.pdl-drag-handle {
+    width: 6px;
+    height: 10px;
+    display: inline-block;
+    background: url('../../assets/images/drag-handle.png') 0 0;
+    cursor: move;
+    float: left;
+    margin: 5px 5px 0 0;
+    vertical-align: middle;
+}
+
+.pdl-help-tip {
+    margin: 10px 0;
+
+    .dashicons {
+        vertical-align: middle;
+    }
+
+    .message {
+        display: inline-block;
+    }
+
+    &.small {
+        font-size: 12px;
+
+        .dashicons {
+            font-size: 15px;
+            width: 15px;
+            height: 15px;
+        }
+    }
+}
+
+.pdl-hidden {
+    display: none;
+}
+
+.pdl-form-field-association-category .pdl-form-field-checkbox-item.disabled,
+.pdl-form-field-association-category .pdl-form-field-radio-item.disabled {
+    opacity: 0.65;
+}
+
+.pdl-form-field-association-category select {
+    width: 100%;
+}
+
+.pdl-form-field-association-category .select2 {
+    width: 100%;
+
+    .select2-selection {
+        border-radius: 0;
+    }
+
+    ul.select2-selection__rendered {
+        li.select2-selection__choice {
+            font-size: 11px;
+            padding: 1px 6px;
+            border-radius: 3px;
+            font-weight: normal;
+            white-space: nowrap;
+            vertical-align: baseline;
+            border: none;
+
+            .select2-selection__choice__remove {
+                margin-right: 5px;
+            }
+        }
+        li.select2-selection__choice,
+        li.select2-search--inline {
+            margin: 5px 5px 0 0;
+        }
+    }
+
+
+    .select2-search {
+        .select2-search__field {
+            font-size: 11px;
+        }
+    }
+}
+
+#pdl-listing-flagging-page {
+    textarea {
+        width: 90%;
+        min-height: 150px;
+        margin-bottom: 10px;
+    }
+}

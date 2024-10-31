@@ -1,0 +1,152 @@
+.pdl-form-field {
+    margin: 12px 0;
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    .pdl-form-field-label {
+        margin: 0 0 3px 0;
+
+        label {
+            display: inline-block;
+            font-weight: bold;
+        }
+
+        .pdl-form-field-required-indicator {
+            margin-left: 3px;
+            font-size: 90%;
+        }
+    }
+
+    &.pdl-form-field-has-description {
+        .pdl-form-field-label {
+            margin-bottom: 0;
+        }
+
+        .pdl-form-field-description {
+            margin-bottom: 3px;
+        }
+    }
+
+    .pdl-form-field-description {
+        padding-left: 6px;
+        color: #666;
+    }
+
+    .pdl-form-field-inner {
+        padding-left: 6px;
+    }
+
+    &.pdl-form-field-type-textarea textarea,
+    &.pdl-form-field-type-textfield input[type="text"],
+    &.pdl-form-field-type-select select,
+    &.pdl-form-field-type-social-twitter input[type="text"],
+    &.pdl-form-field-type-social-facebook input[type="text"],
+    &.pdl-form-field-type-social-linkedin input[type="text"],
+    &.pdl-form-field-type-date input[type="text"] {
+        width: 100%;
+        font-size: inherit;
+    }
+
+    &.pdl-form-field-type-textarea textarea {
+        min-height: 50px;
+    }
+
+    &.pdl-form-field-type-url {
+        .pdl-url-field-col {
+            box-sizing: border-box;
+            float: left;
+            width: 50%;
+
+            &:first-child {
+                padding-right: 10pt;
+            }
+
+            &:last-child {
+                padding-left: 10pt;
+            }
+
+            .sublabel {
+                margin: 0;
+                display: block;
+            }
+
+            input {
+                width: 100%;
+            }
+        }
+    }
+
+    &.pdl-form-field-association-content textarea {
+        min-height: 80px;
+    }
+
+    .field-description {
+        font-size: 90%;
+        color: #696969;
+        float: right;
+    }
+
+    .sublabel {
+        font-size: 90%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+.pdl-form-field-validation-error-wrapper {
+    margin: 24px 0;
+
+    .pdl-form-field-validation-errors {
+        font-size: 80%;
+        color: #d64226;
+        position: relative;
+        background: #fff;
+        border: 1px solid #d64226;
+        border-radius: 4px;
+        padding: 4px 6px;
+        margin: 0 12px 3px 6px;
+
+        &:after, &:before {
+            top: 100%;
+            left: 12px;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+        }
+
+        &:after {
+            border-color: rgba(255, 255, 255, 0);
+            border-top-color: #fff;
+            border-width: 4px;
+            margin-left: -4px;
+        }
+
+        &:before {
+            border-color: rgba(214, 66, 38, 0);
+            border-top-color: #d64226;
+            border-width: 5px;
+            margin-left: -5px;
+        }
+    }
+
+    .pdl-form-field {
+        margin: 0;
+    }
+
+    .pdl-form-field .pdl-form-field-label {
+    }
+
+    .pdl-form-field-inner {
+    }
+
+    .pdl-form-field-type-textfield .pdl-form-field-inner input,
+    .pdl-form-field-type-textarea .pdl-form-field-inner textarea {
+        // border-color: #d64226;
+    }
+}
+

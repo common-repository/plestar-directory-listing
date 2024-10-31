@@ -1,0 +1,14 @@
+{
+    "name": "Default Theme",
+    "description": "This is the new default look of Plestar Directory Listing starting with version 4.0. A cleaner, basic look to the directory with improved layout. This theme is always installed and cannot be removed.",
+    "version": "4.0.4",
+    "author": "PDL Team",
+    "author_email": "support@plestar.net",
+    "author_url": "http://plestar.net",
+    "requires": "4.0",
+    "assets": {
+        "css": [ "styles.css" ],
+        "js": []
+    },
+    "suggested_fields": [ "address", "zip", "phone", "website" ]
+}

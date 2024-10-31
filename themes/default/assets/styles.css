@@ -1,0 +1,50 @@
+.pdl-listing .listing-title {
+    border: none;
+    border-bottom: 1px solid #044F8D;
+    font-size: 115%;
+    margin-bottom: 8px;
+    background: inherit;
+}
+
+.pdl-listing a:not(.pdl-button) {
+    color: #62CAF4;
+    text-decoration: none;
+    border-bottom: 1px solid #F3F3F3;
+}
+
+.pdl-listing .listing-thumbnail {
+    float: left;
+}
+
+.pdl-listing .listing-details {
+    margin-left: 160px;
+}
+
+.pdl-listing .listing-title,
+.pdl-listing .listing-title a,
+.pdl-listing .listing-title h2 {
+    text-decoration: none;
+    font-weight: bold;
+}
+.pdl-listing .listing-title a,
+.pdl-listing .listing-title h2 {
+    color: #044f8d;
+}
+
+.pdl-listing .address-info label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.pdl-listing .pdl-field {
+    margin: 4px 0;
+}
+
+.pdl-listing .pdl-field-type-textarea label {
+    display: block;
+}
+
+.pdl-listing .listing-actions {
+    text-align: right;
+}

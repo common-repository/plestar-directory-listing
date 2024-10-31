@@ -1,0 +1,14 @@
+{
+    "name": "Pre PDL 4.0 Template",
+    "description": "This is the default look of Plestar Directory Listing prior to PDL version 4.0. If you customized your directory templates and don’t want to use our themes, use this option.",
+    "version": "1.0",
+    "author": "PDL Team",
+    "author_email": "support@plestar.net",
+    "author_url": "http://plestar.net",
+    "requires": "4.0",
+    "assets": {
+        "css": [],
+        "js": []
+    }
+}
+

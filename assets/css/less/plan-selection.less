@@ -1,0 +1,140 @@
+.pdl-plan-info-box {
+    padding: 10px;
+    margin: 0 0 6px 0;
+    border: 1px solid #d2d2d2;
+    border-radius: 2px;
+    background: #fafafa;
+}
+
+.pdl-plan-info-box .pdl-plan-duration,
+.pdl-plan-info-box .pdl-plan-details,
+.pdl-plan-info-box .pdl-plan-price {
+    float: left;
+    box-sizing: border-box;
+}
+
+.pdl-plan-info-box .pdl-plan-duration {
+    width: 20%;
+    text-align: center;
+}
+
+.pdl-plan-info-box .pdl-plan-duration-never-expires {
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    line-height: 1.0em;
+    text-transform: uppercase;
+    word-wrap: break-word;
+}
+
+.pdl-plan-info-box .pdl-plan-duration-amount {
+    font-size: 30px;
+    font-weight: bold;
+    display: block;
+    line-height: 1.0em;
+}
+
+.pdl-plan-info-box .pdl-plan-duration-period {
+    font-size: 22px;
+    display: block;
+    line-height: 1.0em;
+}
+
+ .pdl-plan-info-box .pdl-plan-details {
+    width: 55%;
+    padding: 0 10px;
+}
+
+.pdl-plan-info-box .pdl-plan-description {
+    margin: 0 0 10px 0;
+}
+
+.pdl-plan-info-box .pdl-plan-label {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.pdl-plan-info-box .pdl-plan-feature-list {
+    margin: 0 0 0 10px;
+}
+
+.pdl-plan-info-box .pdl-plan-details p {
+    margin: 0;
+}
+
+.pdl-plan-info-box .pdl-plan-feature-list li {
+    list-style-position: inside;
+    margin: 0;
+}
+
+.pdl-plan-info-box .pdl-plan-price {
+    width: 25%;
+}
+
+.pdl-plan-info-box .pdl-plan-price label {
+    font-size: 20px;
+    border: 1px solid #f3f3f3;
+    background: #fdfdfd;
+    border-radius: 2px;
+    display: block;
+    padding: 4px 8px;
+}
+
+.pdl-plan-info-box:not(.display-only) .pdl-plan-price label {
+    cursor: pointer;
+
+    &:hover {
+        border-color: #d0d0d0;
+        background: #fff;
+    }
+}
+
+.pdl-plan-info-box .pdl-plan-price label:hover {
+}
+
+.pdl-plan-info-box .pdl-plan-price label input {
+    margin: 0 4px 0 0;
+    vertical-align: 2px;
+}
+.pdl-plan-info-box {
+    .pdl-plan-disabled-msg {
+        clear: both;
+    }
+}
+
+.pdl-plan-selection-wrapper {
+    &.pdl-size-tiny {
+        .pdl-plan-duration, .pdl-plan-details, .pdl-plan-price {
+            width: 100%;
+        }
+
+        .pdl-plan-duration-amount, .pdl-plan-duration-period {
+            display: inline;
+        }
+
+        .pdl-plan-details {
+            padding: 0 0 4pt;
+        }
+
+        .pdl-plan-label {
+            font-size: 1.5em;
+            margin-bottom: 5px;
+        }
+
+        .pdl-plan-description {
+            margin-bottom: 5px;
+        }
+    }
+
+    &.pdl-size-small {
+        .pdl-plan-details {
+            width: 47%;
+        }
+        .pdl-plan-price {
+            width: 32%;
+        }
+    }
+
+}
+
